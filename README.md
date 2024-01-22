@@ -8,3 +8,7 @@
   - ListSecondaryAction
     -  @mui/material(Material-UI 라이브러리)에서 제공되는 컴포넌트 'ListItem'내에서 부가적인 동작 정보 표시
     -  보통 ListItmeText와 함께 사용되며, ListItemSecondaryAction은 아에템의 오른쪽 끝에 위치, 버튼,아이콘버튼, 체크박스등 동작 수행
+  - onKeyPress이벤트핸들러
+    - 더이상 사용이 권장되지 않는다고 함.('onKeyPress' is deprecated.) onKeyDown 및 onKeyUp 이벤트 권장
+    - onKeyDown은 키를 눌렀을때의 이벤트 정의
+    - onKeyUp은 눌렀다가 뗐을때의 이벤트 정의
