@@ -1,8 +1,21 @@
 import React, {useState} from "react"
-import {ListItem, ListItemText, InputBase, Checkbox} from "@mui/material";
+import {ListItem, 
+    ListItemText, 
+    InputBase, 
+    Checkbox,
+    ListItemSecondaryAction, // 얘는 ListItem내에서 부가적인 동작이나 정보를 표시하기 위해 사용되는 아이 ListItemText와 같이 사용되며 오른쪽끝에 위치
+    IconButton,} from "@mui/material";
+import  {  DeleteOutlined }  from "@mui/icons-material";
+
+
 const Todo = (props) =>{
     const [item,setItem] = useState(props.item);
+    const deleteItem = props.deleteItem;
 
+    //deleteEventHandler 작성
+    const deleteEventHandler = () => {
+        deleteItem(item);
+    }
     return (
         <ListItem>
             <Checkbox Checked={item.done}/>
@@ -17,6 +30,12 @@ const Todo = (props) =>{
                 fullWidth={true}
                 />
             </ListItemText>
+            <ListItemSecondaryAction>
+                <IconButton aria-label="Delete Todo"
+                    onClick={deleteEventHandler}>
+                        <DeleteOutlined/>
+                </IconButton>
+            </ListItemSecondaryAction>
         </ListItem>
     );
 };

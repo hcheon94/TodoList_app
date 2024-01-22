@@ -15,12 +15,11 @@ const AddTodo = (props) =>{
     }
     //enterKeyEventHandler 함수
     const enterKeyEventHandler = (e) => {
-        if(e.key=='Enter'){
+        if(e.key === 'Enter'){
             onButtonClick();
         }
     }
-
-
+    
     //onInputChange 함수 작성
     const onInputChange = (e) =>{
         setItem({title:e.target.value});
