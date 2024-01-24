@@ -12,3 +12,4 @@
     - 더이상 사용이 권장되지 않는다고 함.('onKeyPress' is deprecated.) onKeyDown 및 onKeyUp 이벤트 권장
     - onKeyDown은 키를 눌렀을때의 이벤트 정의
     - onKeyUp은 눌렀다가 뗐을때의 이벤트 정의
+### 4. 1월 24일 editItem(수정) 기능 구현 (체크박스에 체크, 타이틀 변경)
