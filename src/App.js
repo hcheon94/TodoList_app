@@ -23,6 +23,10 @@ const deleteItem = (item) => {
   setItem([...newItems]);
 }
 
+const editItem = () => {
+  setItem([...items]);
+}
+
   //<Todo items = {items}/> 처음에  return에 있던 구문
   /*{items.map(item=>(
     <Todo key = {item.id} item={item}/>
@@ -31,9 +35,11 @@ const deleteItem = (item) => {
     let todoItems = items.length >0 && (
     <Paper style = {{margin:16}}>
       <List>
-        {items.map((item)=> (<Todo 
+        {items.map((item)=> 
+        (<Todo 
         item = {item} 
         key={item.id}
+        editItem={editItem}
         deleteItem={deleteItem}/>))}   
       </List>
       </Paper>
