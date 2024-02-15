@@ -8,6 +8,22 @@ import AddTodo from './AddTodo';
 function App() {
   const [items,setItem] = useState([]);
   
+  const requestOptions = {
+    method: "GET",
+    headers: {"Content-Type" : "application/json"},
+  };
+
+  fetch("http://localhost:8080/todo",requestOptions)
+    .then((response)=>response.json())
+    .then(
+      (response)=>{
+        setItem(response.data);
+      },
+      (error) =>{
+
+      }
+    );
+
 const addItem = (item) => {
   item.id = "ID-" + items.length; //key를 위한 id
   item.done =false; //done
@@ -49,7 +65,6 @@ const editItem = () => {
       <AddTodo addItem={addItem}/>
       <div className="TodoList">{todoItems}</div>
     </Container>
-     {todoItems}
      </div>);
 
 }
