@@ -13,3 +13,7 @@
     - onKeyDown은 키를 눌렀을때의 이벤트 정의
     - onKeyUp은 눌렀다가 뗐을때의 이벤트 정의
 ### 4. 1월 24일 editItem(수정) 기능 구현 (체크박스에 체크, 타이틀 변경)
+### 5. 2월 15일 (거의 한달만) 
+  -서비스 통합 CORS(Cross-Origin-Resource Sharing) 
+  - 백앤드 부분 WebMvcConfig클래스 구현
+  - 추후 effect훅 구현 (무한 렌더링 해결)
