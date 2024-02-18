@@ -17,3 +17,12 @@
   - 서비스 통합 CORS(Cross-Origin-Resource Sharing) 
   - 백앤드 부분 WebMvcConfig클래스 구현
   - 추후 effect훅 구현 (무한 렌더링 해결)
+### 6. 2월 18일
+-------------------
+  #### fetch함수
+  - fetch는 API 서버로 http요청을 송신및 수신하는 메서드 fetch(url,option)
+  - promise오브젝트를 반환하고, Pending,Fulfilled,Rejected 상태가 있고
+  - onResolve,onReject,onError 콜백함수를 전달해 응답 처리
+  - 자바스크립트를 사용하면 필요할 때 서버에 네트워크 요청을 보내고 새로운 정보를 받아오는 일을 할 수 있다. 
+  - fetch() .then, catch 등을 사용하여 코드 간단하게 하였음 fetch()로 GET요청 등 HTTP통신
+  - 근데 안되는게 갑자기 많아졌다 add누르면 리스트 없어지는 등 꼭 수정해야겠다 다시보자
